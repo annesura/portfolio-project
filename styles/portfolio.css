@@ -45,3 +45,85 @@
     padding: 15px 30px;
 }
 
+.featured-projects-paragraph {
+    text-align: center;
+    padding: 70px;
+    font-size: 18px;
+    font-family: var(--default-font-family);
+    font-weight: 400;
+    line-height: 27px;
+    color: #272142;
+}
+
+.container img {
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-family: var(--heading-font-family);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 85px;
+}
+
+.container p {
+    font-family: var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #272142;
+}
+
+.container button {
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    color: var(--primary-color);
+    padding: 18px 30px;
+    line-height: 24px;
+}
+
+.project-details {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.yogurt-project, .dictionary-project {
+    text-align: start;
+}
+
+.weather-project {
+    text-align: end;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        padding: 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        line-height: 2;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .featured-projects-paragraph {
+      padding: 40px 10px;
+      padding-bottom: 0;
+    }
+
+    .project-details {
+        padding: 0;
+        text-align: center;
+    }
+
+    .project-details h2 {
+        font-size: 50px;
+    }
+
+}
