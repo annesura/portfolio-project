@@ -55,18 +55,18 @@
     color: #272142;
 }
 
-.container img {
+.index-content img {
     margin-bottom: 30px;
 }
 
-.container h2 {
+.index-content h2 {
     font-family: var(--heading-font-family);
     font-size: 64px;
     font-weight: 700;
     line-height: 85px;
 }
 
-.container p {
+.index-content p {
     font-family: var(--default-font-family);
     font-size: 16px;
     font-weight: 400;
@@ -74,7 +74,7 @@
     color: #272142;
 }
 
-.container button {
+.index-content button {
     border: 1px solid var(--primary-color);
     border-radius: 4px;
     font-size: 16px;
@@ -100,12 +100,27 @@
 
 .content-container {
     text-align: center;
-   padding: 100px;
+    padding: 100px;
 }
 
 .content {
     text-align: start;
     margin: 30px;
+}
+
+.content h3 {
+    font-family: var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.about-content p {
+font-family: var(--default-font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: rgba(39, 33, 66, 0.7);
 }
 
 .content-container h1 {
@@ -123,14 +138,6 @@ line-height: 27px;
 color: #272142;
 }
 
-.content-container p {
-font-family: var(--default-font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 30px;
-color: rgba(39, 33, 66, 0.7);
-}
-
 .content-container button {
 padding: 18px 30px;
 background: var(--primary-color);
@@ -143,6 +150,18 @@ color: white;
 .content-container img {
     border-radius: 12px;
     max-width: 100%;
+}
+
+.work-content h1 {
+    padding: 30px 0 50px 0;
+}
+
+.work-content p {
+    font-family: var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgba(39, 33, 66, 0.7);
 }
 
 @media (max-width: 900px) {
