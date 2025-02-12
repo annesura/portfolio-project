@@ -5,6 +5,37 @@
     --default-font-family: "Poppins", serif;
 }
 
+nav {
+    padding: 20px 0;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #272142;
+    opacity: 0.7;
+    transition: all 100ms ease-in-out;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    padding-left: 15px;
+}
+nav ul {
+    display: inline;
+    font-family: var(--default-font-family);
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav li .current-page, nav a:hover {
+    color: var(--primary-color);
+}
+
 .hero {
     background-color: var(--secondary-color);
     text-align: center;
@@ -57,6 +88,8 @@
 
 .index-content img {
     margin-bottom: 30px;
+    border-radius: 4px;
+    
 }
 
 .index-content h2 {
@@ -64,6 +97,7 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 85px;
+    margin-top: 0;
 }
 
 .index-content p {
