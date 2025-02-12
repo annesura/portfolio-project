@@ -5,6 +5,14 @@
     --default-font-family: "Poppins", serif;
 }
 
+h1, h2, h3, h4 {
+    font-family: var(--heading-font-family);
+}
+
+p {
+    font-family: var(--default-font-family);
+}
+
 nav {
     padding: 20px 0;
     
@@ -43,14 +51,12 @@ nav li .current-page, nav a:hover {
 }
 
 .hero h1 {
-    font-family: var(--heading-font-family);
     font-weight: 700;
     font-size: 96px;
     line-height: 128px;
 }
 
 .hero h2 {
-    font-family: var(--default-font-family);
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
@@ -58,14 +64,13 @@ nav li .current-page, nav a:hover {
 }
 
 .hero p {
-    font-family: var(--default-font-family);
     font-weight: 700;
     font-size: 36px;
     line-height: 54px;
     color: #272142;
 }
 
-.hero button {
+.hero button, footer .work-inquiry button {
     font-family: var(--default-font-family);
     font-size: 18px;
     font-weight: 500;
@@ -80,7 +85,6 @@ nav li .current-page, nav a:hover {
     text-align: center;
     padding: 70px;
     font-size: 18px;
-    font-family: var(--default-font-family);
     font-weight: 400;
     line-height: 27px;
     color: #272142;
@@ -93,7 +97,6 @@ nav li .current-page, nav a:hover {
 }
 
 .index-content h2 {
-    font-family: var(--heading-font-family);
     font-size: 64px;
     font-weight: 700;
     line-height: 85px;
@@ -101,7 +104,6 @@ nav li .current-page, nav a:hover {
 }
 
 .index-content p {
-    font-family: var(--default-font-family);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
@@ -150,7 +152,6 @@ nav li .current-page, nav a:hover {
 }
 
 .about-content p {
-font-family: var(--default-font-family);
 font-weight: 400;
 font-size: 16px;
 line-height: 30px;
@@ -158,14 +159,12 @@ color: rgba(39, 33, 66, 0.7);
 }
 
 .content-container h1 {
-font-family: var(--heading-font-family);
 font-weight: 700;
 font-size: 64px;
 line-height: 85px;
 }
 
 .content-container h2 {
-font-family: var(--default-font-family);
 font-weight: 700;
 font-size: 18px;
 line-height: 27px;
@@ -191,14 +190,69 @@ color: white;
 }
 
 .work-content p {
-    font-family: var(--default-font-family);
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     color: rgba(39, 33, 66, 0.7);
 }
 
+footer {
+    margin: 60px;
+}
+
+footer .work-inquiry {
+    background-color: var(--secondary-color);
+    padding: 30px 60px;
+    border-radius: 10px;
+}
+
+footer .work-inquiry h4 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+footer .work-inquiry p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #272142;
+    opacity: 0.7;
+}
+
+footer .footer-email, footer .footer-icons {
+    text-decoration: none;
+    color: black;
+}
+
+footer .footer-email {
+    font-family: var(--default-font-family);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer .footer-email:hover {
+    color: var(--primary-color);
+}
+
+footer .footer-icons a {
+    font-size: 18px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin: 0 30px;
+    padding: 10px 16px;
+    border-radius: 50%;
+    transition: all 200ms ease-in-out;
+}
+
+footer .footer-icons a:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+
+}
+
 @media (max-width: 900px) {
+
     .hero {
         padding: 20px 0;
     }
@@ -239,5 +293,17 @@ color: white;
         font-size: 30px;
         line-height: 1.5;
         padding: 0;
+    }
+
+    footer .work-inquiry {
+        padding: 15px;
+    }
+
+    footer .work-inquiry h4 {
+        font-size: 24px;
+    }
+
+    footer .work-inquiry p {
+        font-size: 18px;
     }
 }
